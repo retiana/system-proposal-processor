@@ -1,0 +1,17 @@
+services:
+
+  postgres:
+    image: postgres:16
+    container_name: postgres-insurance
+    environment:
+      POSTGRES_DB: insurance
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+
+  kafka:
+    image: apache/kafka:latest
+    container_name: kafka-insurance
+    ports:
+      - "9092:9092"
