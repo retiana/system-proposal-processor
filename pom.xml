@@ -51,6 +51,52 @@
         </dependency>
     </dependencies>
 
+    <repositories>
+        <repository>
+            <id>manulife-releases</id>
+            <url>https://artifactory.ap.manulife.com/artifactory/plugins-release</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>manulife-snapshots</id>
+            <url>https://artifactory.ap.manulife.com/artifactory/plugins-snapshot</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>manulife-releases</id>
+            <url>https://artifactory.ap.manulife.com/artifactory/plugins-release</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </pluginRepository>
+        <pluginRepository>
+            <id>manulife-snapshots</id>
+            <url>https://artifactory.ap.manulife.com/artifactory/plugins-snapshot</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </pluginRepository>
+    </pluginRepositories>
+
     <build>
         <plugins>
             <plugin>
