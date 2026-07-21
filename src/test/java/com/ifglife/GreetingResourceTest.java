@@ -27,7 +27,7 @@ class GreetingResourceTest {
                 .contentType("application/json")
                 .body(payload)
                 .when()
-                .post("/proposals")
+                .post("/proposals/submit")
                 .then()
                 .statusCode(202);
     }
